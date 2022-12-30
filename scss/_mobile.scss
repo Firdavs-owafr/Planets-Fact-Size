@@ -1,0 +1,464 @@
+@media only screen and (max-width: 816px){
+    .wrapper{
+        width: 100%;
+        height: max-content;
+        background-image: url(../img/background-img.jpg);
+        margin-bottom: 50px;
+        .header{
+                width: 90%;
+                height: max-content;
+                margin-top: 13px;
+                flex-wrap: wrap;
+                margin: 13px auto 0;
+                // justify-content: flex-end;
+                // background-color: aqua;
+                // padding: 0 32px 0 32px;
+            .logo{
+                width: max-content; 
+                text-align: start;
+                margin-bottom: 0;
+            }
+      
+            .menu {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                padding: 0;
+                position: absolute;
+                width: 50px;
+                margin-top: 0;
+                z-index: 10;
+              }
+              .line {
+                fill: none;
+                stroke:white;
+                stroke-width: 3;
+                transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+              }
+              .line1 {
+                stroke-dasharray: 60 207;
+                stroke-width: 6;
+              }
+              .line2 {
+                stroke-dasharray: 60 60;
+                stroke-width: 6;
+              }
+              .line3 {
+                stroke-dasharray: 60 207;
+                stroke-width: 6;
+              }
+              .opened .line1 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+              }
+              .opened .line2 {
+                stroke-dasharray: 1 60;
+                stroke-dashoffset: -30;
+                stroke-width: 6;
+              }
+              .opened .line3 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+              }
+              
+            .text-header{
+                width: 100%;
+                height: max-content;
+                margin: 0 auto;
+                background-color: rgb(7, 7, 36);
+                transition: 0.9s;
+                position: absolute; // li div 
+                top: -220%;
+                z-index: 9;
+                left: 0;
+                .parent-li{ 
+                    gap: 33px;
+                    height: max-content;
+                    // background-color: red;
+                    user-select: none;
+                    margin-top: 0; //
+                    flex-direction: column;
+
+                    .ul-children {
+                        width: 90%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        // background-color: red;
+                        font-family: "League Spartan", sans-serif;
+                        position: relative;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 25px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        list-style: none;
+                        cursor: pointer;
+                        
+                justify-content: space-between;
+                        // margin-bottom: 20px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+                        // padding-right: 30px;
+                        &:last-child{
+                            border: 0;
+                        }
+                        span{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 100%;
+                            display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                    // margin-left: 30px;
+                    align-items: center;
+
+                            stroke{
+                                margin-left: 35px;
+                            }
+
+                            &:nth-child(1){
+                                background: #DEF4FC;
+                            }
+                            
+                        }
+                        svg{
+                            display: block;
+                        }
+                        &:nth-child(2){
+                            span{
+                                background: #F7CC7F;
+                            }
+                        }
+                        &:nth-child(3){
+                            span{
+                                background: #545BFE;
+                            }
+                        }
+                        &:nth-child(4){
+                            span{
+                                background: #FF6A45;
+                            }
+                        }
+                        &:nth-child(5){
+                            span{
+                                background: #ECAD7A;
+                            }
+                        }
+                        &:nth-child(6){
+                            span{
+                                background: #FCCB6B;
+                            }
+                        }
+                        &:nth-child(6){
+                            span{
+                                background: #65F0D5;
+                            }
+                        }
+                        &:nth-child(6){
+                            span{
+                                background: #497EFA;
+                            }
+                        }
+                      }
+                      
+                      .ul-children::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 4px;
+                        background-color: transparent;
+                        bottom: 0;
+                        left: 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform .3s ease-in-out;
+                      }
+                      
+                      .ul-children:hover::before {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                      }
+                      
+                      & .active{
+                        &:nth-child(1){
+                            color:  #DEF4FC;
+                        }
+                        &:nth-child(2){
+                            color: #F7CC7F;
+                        }
+                        &:nth-child(3){
+                            color:#545BFE;
+                        }
+                        &:nth-child(4){
+                            color: #FF6A45;
+                        }
+                        &:nth-child(5){
+                            color:#ECAD7A;
+                        }
+                        &:nth-child(6){
+                            color:#FCCB6B;
+                        }
+                        &:nth-child(7){
+                            color:#65F0D5;
+                        }
+                        &:nth-child(8){
+                            color:#497EFA;
+                        }
+                      }
+                    
+                }
+               
+            }
+
+
+
+
+            & .active_bur{
+                position: absolute;
+                top: 10%;
+                transition: 0.9s;
+            }
+
+
+
+        }
+        .linie{
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .tab-text{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            user-select: none;
+            display: none;
+            .tab-ul{
+                width: max-content;
+                display: flex;
+                gap: 43px;
+                margin: 0 auto;
+                padding: 20px 0 0;
+                .tab-li{
+                    height: 30px;
+                    list-style: none;
+                    font-family: "League Spartan", sans-serif;
+                    font-weight: 700;
+                    font-size: 9px;
+                    line-height: 10px;
+                    text-align: center;
+                    letter-spacing: 1.92857px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    &:hover{
+                        border-bottom: 4px solid #419EBB;
+                    }
+                }
+                // justify-content: space-between;
+            }
+        }
+        .linie-bottom{
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            margin-top: 70px;
+        }
+        .main{
+            width: 100%;
+            height: max-content;
+            margin: 0 auto;
+            margin-top: 100px;
+            .box-header{
+                width: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                .img{
+                    width: 50%;
+                    height: max-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 60px;
+                    // background-color: red;
+                    img{
+                        width: 111px;
+                        height:max-content;
+                        // background-color:yellow;
+                        // object-fit: cover;
+                    }
+                }
+                .img-fact{
+                    width: 100%;
+                    height: max-content;
+                    color: #FFFFFF;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    text-align: center;
+                    .box-text2{
+                        width:100%;
+                        margin-right: 60px;
+
+                        .title-planets{
+                            text-transform: uppercase;
+                            font-family: 'Antonio';
+                            font-weight: 400;
+                            font-size: 80px;
+                            line-height: 104px;
+                            text-transform: uppercase;
+                            margin-bottom: 23px;
+                        }
+                        .text-fact{
+                            font-family: "League Spartan", sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
+                            margin-bottom: 24px;
+                            color: #FFFFFF;
+                        }
+                        strong{
+                            font-family: "League Spartan", sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                            a{
+                                font-family: "League Spartan", sans-serif;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 25px;
+                                mix-blend-mode: normal;
+                                opacity: 0.5;
+                                margin-right: 8px;
+                                color: #FFFFFF;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    // flex-direction: column;
+                    // flex-wrap: wrap;
+                    .btns{
+                        width: 90%;
+                        height: max-content;
+                        user-select: none;
+                        // background-color: red;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 4%;
+                        // left: 3%;
+                        margin: 60px auto 0;
+                        // display: block;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        // flex-direction: ;
+                        flex-wrap: wrap;
+                        .btns-btn{
+                            height: 40px;
+                            font-family: "League Spartan", sans-serif;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 25px;
+                            letter-spacing: 2.57143px;
+                            text-transform: uppercase;
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                            border: 0;
+                            padding: 0;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            transition: 0.9s;
+                            // display: none; //
+                            span{
+                                display: none;
+                            }
+                            &:hover {
+                                // border: 0;
+                                background-color:transparent;
+                                border-bottom: 4px solid #419EBB;
+                                opacity: 1;
+                                color: white;
+                                
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            b{
+                                display: none;
+                                margin-right: 28px;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+    
+            .footer{
+                width: 100%;
+                margin-top: 27px;
+                gap: 10px;
+                flex-direction: column;
+                .box{
+                    width: 100%;
+                    height: max-content;
+                    padding: 16px 24px 13px 24px;
+                    mix-blend-mode: normal;
+                    opacity:1;
+                    border: 1px solid #eee;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .box-title{
+                        margin-bottom: 5px;
+                        font-family: "League Spartan", sans-serif;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 25px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        mix-blend-mode: normal;
+                        opacity:0.5;
+                    }
+                    .anim-box{
+                        width: max-content;
+                        .box-text{
+                            font-family: 'Antonio';
+                            font-weight: 400;
+                            font-size: 40px;
+                            line-height: 52px;
+                            letter-spacing: -1.5px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            opacity: 1;
+                        }
+                        b{
+                            font-family: 'Antonio';
+                            font-weight: 400;
+                            font-size: 40px;
+                            line-height: 52px;
+                            letter-spacing: -1.5px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            margin-left: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+
