@@ -27,7 +27,6 @@ fetch("../data.json")
 
 
 function planetsInfoItems(el) {
-  console.log(el);
   let  {name,overview: {content,source},rotation,revolution,radius,temperature,images: {planet,internal,geology}} = el;
           main.innerHTML = `
       <div class="box-header container d-flex justify-content-between align-items-center">

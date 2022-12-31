@@ -262,12 +262,15 @@ body {
                         letter-spacing: 2.57143px;
                         text-transform: uppercase;
                         mix-blend-mode: normal;
-                        opacity: 0.5;
-                        border: 1px solid #eee;
+                        // opacity: 0.5;
+                        border: 1px solid rgba(238, 238, 238, 0.375);
                         padding: 12px 0 11px 28px;
                         margin-bottom: 16px;
                         cursor: pointer;
                         transition: 0.9s;
+                        b{
+                            opacity: 0.5;
+                        }
                         &:hover {
                             // border: 0;
                             background: #419EBB;
